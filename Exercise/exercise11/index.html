@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise no 11</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("enter your factorial number");
+      let d = 5;
+      // By loops method
+      function factorial(number) {
+        let fact = 1;
+        for (let index = 1; index <= number; index++) {
+          fact = fact * index;
+        }
+        return fact;
+      }
+    //   by array method 
+      console.log(factorial(a));
+      function factfor(number) {
+        let arr = Array.from(Array(number+1).keys());
+        let c = arr.slice(1).reduce((d, b) => d * b);
+        return c;
+      }
+      console.log(factfor(d));
+    </script>
+  </body>
+</html>
