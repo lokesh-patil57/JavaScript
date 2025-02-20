@@ -20,4 +20,14 @@ function sum(a,b) {
 }
  console.log( sum(1,2));
  console.log(sum(sun(1,2),3));
+
+
+ function noSum (n) {
+    let sum = 0
+    for(let i = 1; i <= n; i++) {
+        sum = sum+i
+        
+    }
+    return sum
+ }
  
