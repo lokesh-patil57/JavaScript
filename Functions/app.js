@@ -14,3 +14,10 @@ function table(num) {
     console.log(i);
     }
 }
+
+function sum(a,b) {
+    return a+b
+}
+ console.log( sum(1,2));
+ console.log(sum(sun(1,2),3));
+ 
