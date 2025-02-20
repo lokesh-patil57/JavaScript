@@ -4,7 +4,13 @@ function die () {
     
 } 
 function avg (a,b,c){
-    Average = a+b+c/3
+    Average = (a+b+c)/3
     console.log('Your average is :',Average);
     
+}
+
+function table(num) {
+    for(let i = num ; i <= num*10 ; i+=num ) {
+    console.log(i);
+    }
 }
