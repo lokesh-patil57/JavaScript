@@ -15,6 +15,21 @@
 </head>
 <body>
     <p>This is a Paragraph</p>
-    
+    <div class="box"></div>
+    <script>
+        let p = document.querySelector("p")
+        p.addEventListener( "click" , function () {
+            console.log('ParaH was clicked');
+            
+        })
+        let box = document.QuarrySelector('.box');
+        box.addEventListener( 'click' , function () {
+            console.log('Mouse Inside Div');
+            
+        });
+        
+        
+        
+    </script>
 </body>
 </html>
