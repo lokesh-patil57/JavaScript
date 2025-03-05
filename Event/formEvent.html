@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form action="/action">
+        <input type="text" placeholder="Enter Detail" name="" id="">
+        <button>Register</button>
+    </form>
+    <script>
+        let form = document.querySelector('form');
+        form.addEventListener( 'submit' , function (event) {
+            event.preventDefault()
+            console.log('Form Submitted');
+            
+        });
+        
+        
+    </script>
+</body>
+</html>
