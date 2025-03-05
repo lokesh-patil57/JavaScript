@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key board Events</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Move character" />
+    <button>Click me!</button>
+
+    <script>
+      let inp = document.querySelector("input");
+      inp.addEventListener("keydown", function (e) {
+        console.log("Key = ", e.key);
+        console.log("code =", e.code);
+        if (e.code == "KeyW") {
+          console.log("Character Moves Up");
+        } else if (e.code == "KeyA") {
+          console.log("Character Moves Left");
+        } else if (e.code == "KeyD") {
+          console.log("Character Moves Right");
+        } else if (e.code == "KeyS") {
+          console.log("Character Moves Down");
+        } else {
+          console.log("Enter Keys A , W , D , S to move the character");
+        }
+      });
+    </script>
+  </body>
+</html>
