@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Game</title>
+    <title>Simon Says Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Simon Game</h1>
-    <h2>Press Any Key To Start Game</h2>
 
-    <div class="btn-cont">
-        <div class="firstline">
-            <div class="box red btn" type ="button" class="">1</div>
-            <div class="box green btn" type ="button" class="">2</div>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <h3></h3>
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red"></div>
+            <div class="btn yellow" type="button" id="yellow"></div>
         </div>
-        <div class="secline">
-            <div class="box orange btn" type ="button" class="">3</div>
-            <div class="box purple btn" type ="button" class="">4</div>
+        <div class="line-two">
+            <div class="btn grey" type="button" id="grey"></div>
+            <div class="btn purple" type="button" id="purple"></div>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
