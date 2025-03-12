@@ -12,8 +12,15 @@ function savetoDb(data) {
 
 savetoDb("luckypatil")
 .then (() => {
-  console.log('Data Saved');
-  
+  console.log('data 1 : Data Saved');
+  return savetoDb("ganeshpatil")
+})
+.then(() => {
+  console.log('data 2 : Data Saved');
+  return savetoDb("Lilapatil")
+})
+.then (() => {
+  console.log('data 3 : Data Saved');
 })
 .catch (() => {
   console.log('Weak Connection');
