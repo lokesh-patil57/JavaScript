@@ -1,5 +1,5 @@
 function savetoDb(data) {
-  return Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     let internetSpeed = Math.floor(Math.random() * 10) + 1;
     if (internetSpeed > 4) {
       resolve("Success :Data Saved to DataBase");
@@ -7,6 +7,15 @@ function savetoDb(data) {
       reject("Failuare: Weak connection");
     }
   });
+
 }
 
-s
+savetoDb("luckypatil")
+.then (() => {
+  console.log('Data Saved');
+  
+})
+.catch (() => {
+  console.log('Weak Connection');
+  
+})
