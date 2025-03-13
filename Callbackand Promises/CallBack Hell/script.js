@@ -16,10 +16,10 @@ changeColor("red", 1000)
   })
   .then(() => {
     console.log("Color Changed to Green");
-    return changeColor("black", 5000);
+    return changeColor("blue", 1000);
   })
   .then(() => {
-    console.log("Color Changed to Black");
+    console.log("Color Changed to Blue");
   })
 
   .catch((error) => {
