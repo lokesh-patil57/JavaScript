@@ -17,7 +17,7 @@ app.get("/rolldie", (req, res) => {
 });
 
 app.get("/ig/:username", (req, res) => {
-    let {username} = req.params
-    res.render("instagram.ejs", { username });
-  });
-  
+  const followers = ["loki", "Thor", "Ironman", "Cap"];
+  let { username } = req.params;
+  res.render("instagram.ejs", { username, followers });
+});
